@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6BCABE8F-D4C5-602B-7AE1-C7A4C69DA1E8}</ProjectGuid>
+    <ProjectGuid>{AAF1783A-5136-6D26-09DD-40AEFE213DD8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -55,8 +55,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Ball.cs" />
-    <Compile Include="Assets\Scripts\Brick.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Brick.cs" />
+    <Compile Include="Assets\Scripts\DontDestroyAudio.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

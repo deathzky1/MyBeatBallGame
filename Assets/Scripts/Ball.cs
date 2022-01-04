@@ -10,6 +10,7 @@ public class Ball : MonoBehaviour
     Vector3 _velocity;
     Renderer _renderer;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +21,7 @@ public class Ball : MonoBehaviour
 
     void Launch()
     {
-        _rigidbody.velocity = Vector3.up * _speed;
-
+        _rigidbody.velocity = Vector3.down * _speed;
     }
 
     // Update is called once per frame
@@ -36,6 +36,7 @@ public class Ball : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         _rigidbody.velocity = Vector3.Reflect(_velocity, collision.contacts[0].normal);
